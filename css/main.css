@@ -87,6 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
 /* --------------------- Base Header - Footer Styles ---------------- */
 
 header,
@@ -97,10 +101,8 @@ footer {
     flex-flow: row wrap;
 }
 
-/* Header Styles */
-
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -108,10 +110,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -119,44 +124,55 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 /* Footer Styles */
 
 footer {
-
+  flex-direction: column;
 }
 
-.footer-content {
-
+footer .p {
+  margin: 0;
 }
 
-address .contact {
-
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
-footer .social {
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .social-icons {
-  justify-content: space-between;
-}
-
 .copyright {
-
+  margin: 20px 0;
 }
 
 /* --------------------- Mobile Styles - Homepage ---------------- */
 
 .hero-area {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -167,10 +183,6 @@ aside {
   flex-flow: row wrap;
 }
 
-.content-wrapper {
-
-}
-
 .form-description {
 
 }
@@ -179,9 +191,21 @@ aside {
 
 }
 
+/* Features */ 
+
 .features {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .feature-items {
@@ -191,8 +215,8 @@ aside {
   flex-flow: row wrap;
 }
 
-.features article {
-
+.features p {
+  margin: 0;
 }
 
 .fontawesome-icon {
@@ -205,13 +229,17 @@ aside {
 
 .reviews {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
-.team-review {
+.reviews h2 {
+  margin-bottom: 40px;
+}
 
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 .reviews article {
@@ -223,15 +251,26 @@ aside {
 
 .faq {
   display: flex;
+  justify-content: center;
+  align-items: center;  
   flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 /* --------------------- Mobile Styles - About ---------------- */
 
@@ -255,7 +294,14 @@ figure {
 }
 
 .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 address .contact-content {
