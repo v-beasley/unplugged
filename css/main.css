@@ -531,7 +531,52 @@ footer .copyright {
 
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */
+  /*-----------  Home page --------------*/
+/* General styles */
+.content-wrapper {
+  max-width: 960px;
+} 
+
+/* Hero area */
+.hero-area h1 {
+  width: 70%;
 }
+
+/* aside */
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 34%;
+}
+
+/* Features */
+.features article {
+  flex-basis: 33%;
+}
+
+.features h2 {
+  width: 89%;
+}
+
+/* Reviews */
+.reviews article div {
+  width: 44%;
+}
+
+/*-----------  FAQ page --------------*/
+.faq h2 {
+  width: 100%;
+}
+
+/*-----------  About page --------------*/
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 96%;
+}
+
 
 /* ==========================================================================
    Print styles.
