@@ -303,9 +303,9 @@ input[type=button] {
   background-size: cover;
 }
 
-.features h2 {
+/*.features h2 {
   margin-bottom: 60px;
-}
+} */
 
 .features article {
   width: 63%;
@@ -324,8 +324,9 @@ input[type=button] {
   text-align: center;
 }
 
-.fontawesome-icon {
-
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */ 
