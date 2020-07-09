@@ -172,6 +172,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 100%;
 }
 
 .header-divider {
@@ -197,6 +198,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
@@ -209,6 +211,10 @@ footer {
   flex-direction: column;
   color: #fff;
   text-align: center;
+}
+
+footer h4 {
+  margin-bottom: 40px;
 }
 
 footer p {
@@ -272,7 +278,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+}
 
+aside .content-wrapper {
+  margin: 0 0 50px 0;
 }
 
 aside .form {
@@ -311,9 +320,9 @@ input[type=button] {
   background-size: cover;
 }
 
-/*.features h2 {
-  margin-bottom: 60px;
-} */
+.features h2 {
+  margin: 0 0 30px 0;
+} 
 
 .features article {
   width: 63%;
@@ -330,6 +339,7 @@ input[type=button] {
 .features p {
   margin: 0;
   text-align: center;
+  padding: 0 6px;
 }
 
 .features i {
@@ -374,7 +384,7 @@ input[type=button] {
 }
 
 .faq h2 {
-  margin-bottom: 40px;
+  margin: 0 0 44px;
   line-height: 1;
 }
 
@@ -384,8 +394,12 @@ input[type=button] {
 
 .faq h4{
   line-height: 1.333;
+  margin: 0 0 16px 0;
 }
 
+.faq p {
+  margin: 0;
+}
 /* --------------------- Mobile Styles - About ---------------- */
 
 .mission {
@@ -420,14 +434,19 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.contact-content p {
+.contact-content p, 
+h2 {
   margin: 0;
 }
 
 address h4 {
   color: #fff;
+  margin: 8px 0 14px;
 }
 
+footer .copyright {
+  margin: 0px 0 20px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -559,6 +578,10 @@ header nav ul {
 justify-content: space-between;
 }
 
+header nav ul li {
+  font-size: 1em;
+}
+
 .header-divider {
   display: none;
 }
@@ -580,18 +603,22 @@ aside .content-wrapper .form {
 }
 
 /* Features */
+.features .content-wrapper {
+  margin-bottom: 60px;
+}
+
 .features article {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
+  margin: 0 0 30px 0;
   }
 
 .features-item-description {
-  width: 50%;
+  width: 65%;
   }
-
 
 /* Reviews */
 .reviews article {
@@ -601,6 +628,7 @@ aside .content-wrapper .form {
 
 .reviews h2 {
   width: 85%;
+  margin: 0 0 40px;
 }
 
 .reviews article div,
@@ -632,11 +660,14 @@ footer .contact {
 
 footer h4 {
   font-size: 1.5em;
-  margin-bottom: 40px;
 }
 
 footer p {
   line-height: 1.285;
+}
+
+footer .social-icons p {
+  margin: 0 20px;
 }
 
 footer .copyright {
@@ -647,10 +678,11 @@ footer .copyright {
 
 .faq .content-wrapper {
   justify-content: space-between;
+  margin: 100px 0;
 }
 
 .faq-content {
-  flex-basis: 45%;
+  flex-basis: 47%;
 }
 
 .faq h2 {
@@ -663,6 +695,10 @@ footer .copyright {
     line-height: 1.125;
 }
 /*-----------  About page --------------*/
+.mission .content-wrapper {
+  margin: 90px 0;
+}
+
 .mission-content {
   display: flex;
   justify-content: space-between;
@@ -690,6 +726,11 @@ footer .copyright {
 
 .contact-content h4 {
   font-size: 1.5em;
+  margin-top: 50px;
+}
+
+footer h4 {
+  margin: 0 0 40px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -719,8 +760,15 @@ p {
 }
 
 /* Hero area */
+.hero-area {
+  min-height: 600px;
+}
+
+.hero-area .content-wrapper {
+  margin: 0;
+}
 .hero-area h1 {
-  width: 60%;
+  width: 70%;
   font-size: 3.75em;
 }
 
@@ -738,13 +786,19 @@ aside .content-wrapper .form {
   font-size: 1.125em;
 }
 
+h3, p {
+  margin: 0 0 20px;
+}
+
 /* Features */
 .features article {
   flex-basis: 33%;
+  margin-top: 20px;
 }
 
 .features h2 {
   width: 90%;
+  margin-bottom: 36px;
 }
 
 /* Reviews */
@@ -767,6 +821,14 @@ footer h4 {
 }
 
 /*-----------  FAQ page --------------*/
+header {
+  padding: 30px 0;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
 .faq h2 {
   width: 100%;
   font-size: 3em;
@@ -782,10 +844,20 @@ footer h4 {
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
+  font-size: 3em;
 }
 
 .map figure {
   padding-bottom: 37.5%;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
+  margin: 40px 0;
+}
+
+.contact-content {
+  width: 87%;
 }
 
 /* ==========================================================================
