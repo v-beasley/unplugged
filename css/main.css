@@ -748,7 +748,7 @@ footer h4 {
 
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */
-  /*-----------  Home page --------------*/
+  /*-----------  Desktop Home page --------------*/
 /* General styles */
 header {
   padding: 15px 0;
@@ -779,6 +779,7 @@ p {
 .hero-area h1 {
   width: 70%;
   font-size: 3.75em;
+  margin-top: 50px;
 }
 
 /* aside */
@@ -825,7 +826,7 @@ footer h4 {
   font-size: 1.875em;
 }
 
-/*-----------  FAQ page --------------*/
+/*----------- Desktop FAQ page --------------*/
 header {
   padding: 30px 0;
 }
@@ -845,7 +846,7 @@ header nav ul li {
     line-height: 1;
 }
 
-/*-----------  About page --------------*/
+/*-----------  Desktop About page --------------*/
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
